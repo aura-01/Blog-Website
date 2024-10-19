@@ -1,9 +1,12 @@
 {
+  "homepage": "https://aura-01.github.io/Blog-website",
   "name": "developer-blog-starter-code",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
